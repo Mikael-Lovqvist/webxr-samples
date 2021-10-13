@@ -150,6 +150,12 @@ export class SkyboxNode extends Node {
         material.texCoordScaleOffset.value = [1.0, 0.5, 0.0, 0.0,
                                               1.0, 0.5, 0.0, 0.5];
         break;
+
+      case 'stereoBottomTop':
+        material.texCoordScaleOffset.value = [1.0, 0.5, 0.0, 0.5,
+                                              1.0, 0.5, 0.0, 0.0];
+        break;
+
       case 'stereoLeftRight':
         material.texCoordScaleOffset.value = [0.5, 1.0, 0.0, 0.0,
                                               0.5, 1.0, 0.5, 0.0];
